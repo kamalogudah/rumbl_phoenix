@@ -7,9 +7,9 @@ defmodule Rumbl.Accounts do
 
   def list_users do
     [
-      %User{id: "1", name: "Jose", username: "josevalim"},
-      %User{id: "2", name: "Paul", username: "kamalogudah"},
-      %User{id: "3", name: "Mike", username: "mikey"}
+      %User{id: "1", name: "Jose Valim", username: "josevalim"},
+      %User{id: "2", name: "Paul Oguda", username: "kamalogudah"},
+      %User{id: "3", name: "Mike Opinde", username: "mikey"}
   ]
   end
 
