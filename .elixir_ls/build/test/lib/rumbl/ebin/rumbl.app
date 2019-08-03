@@ -15,6 +15,7 @@
                         'Elixir.RumblWeb.PageController',
                         'Elixir.RumblWeb.PageView','Elixir.RumblWeb.Router',
                         'Elixir.RumblWeb.Router.Helpers',
+                        'Elixir.RumblWeb.UserController',
                         'Elixir.RumblWeb.UserSocket']},
               {registered,[]},
               {vsn,"0.1.0"},
