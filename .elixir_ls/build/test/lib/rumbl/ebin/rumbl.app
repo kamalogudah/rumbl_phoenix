@@ -16,6 +16,8 @@
                         'Elixir.RumblWeb.PageController',
                         'Elixir.RumblWeb.PageView','Elixir.RumblWeb.Router',
                         'Elixir.RumblWeb.Router.Helpers',
+                        'Elixir.RumblWeb.SessionController',
+                        'Elixir.RumblWeb.SessionView',
                         'Elixir.RumblWeb.UserController',
                         'Elixir.RumblWeb.UserSocket',
                         'Elixir.RumblWeb.UserView']},
