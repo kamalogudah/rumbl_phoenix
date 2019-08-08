@@ -8,7 +8,7 @@
                         'Elixir.Rumbl.Accounts.User',
                         'Elixir.Rumbl.Application','Elixir.Rumbl.DataCase',
                         'Elixir.Rumbl.Repo','Elixir.RumblWeb',
-                        'Elixir.RumblWeb.ChannelCase',
+                        'Elixir.RumblWeb.Auth','Elixir.RumblWeb.ChannelCase',
                         'Elixir.RumblWeb.ConnCase','Elixir.RumblWeb.Endpoint',
                         'Elixir.RumblWeb.ErrorHelpers',
                         'Elixir.RumblWeb.ErrorView','Elixir.RumblWeb.Gettext',
