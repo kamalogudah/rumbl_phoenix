@@ -11,7 +11,6 @@
 # and so on) as they will fail if something goes wrong.
 alias Rumbl.Multimedia
 
-for category <- ["Action","Drama","Romance","Comedy","Sci-fi"] do
+for category <- ["Action", "Drama", "Romance", "Comedy", "Sci-fi"] do
   Multimedia.create_category!(category)
 end
-

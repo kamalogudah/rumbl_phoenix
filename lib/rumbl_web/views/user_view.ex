@@ -7,6 +7,5 @@ defmodule RumblWeb.UserView do
     name
     |> String.split(" ")
     |> Enum.at(0)
-
   end
 end

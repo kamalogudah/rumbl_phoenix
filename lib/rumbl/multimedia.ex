@@ -116,9 +116,8 @@ defmodule Rumbl.Multimedia do
   def change_video(%Video{} = video) do
     Video.changeset(video, %{})
   end
-  
+
   def create_category!(name) do
-    
     # Repo.insert!(%Category{​name: name}, on_conflict: :nothing) 
     Repo.insert!(%Category{name: name}, on_conflict: :nothing)
   end
@@ -126,7 +125,7 @@ defmodule Rumbl.Multimedia do
   defp user_videos_query(query, %Accounts.User{id: user_id}) do
     from(v in query, where: v.user_id == ^user_id)
   end
-  
+
   def list_alphabetical_categories do
     Category
     |> Category.alphabetical()
