@@ -66,6 +66,7 @@ defmodule Rumbl.VideoControllerTest do
       assert html_response(conn, 200) =~ "check the errors"
       assert video_count() == count_before
     end
+
     # test "authorizes actions against access by other users", %{conn: conn} do
     #   owner = user_fixture(username: "owner")
     #   video = video_fixture(owner, @create_attrs)
