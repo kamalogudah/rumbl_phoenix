@@ -2,8 +2,8 @@ use Mix.Config
 
 # Configure your database
 config :rumbl, Rumbl.Repo,
-  username: "postgres",
-  password: "postgres",
+  username: "ogudah",
+  password: "password",
   database: "rumbl_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
@@ -16,3 +16,5 @@ config :rumbl, RumblWeb.Endpoint,
 
 # Print only warnings and errors during test
 config :logger, level: :warn
+
+config(:pbkdf2_elixir, :rounds, 1)
