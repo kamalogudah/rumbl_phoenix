@@ -3,7 +3,6 @@
 <table>
   <thead>
     <tr>
-     
       <th>Title</th>
       <th></th>
       <th></th>
@@ -14,12 +13,15 @@
 <%= for video <- @videos do %>
     <tr>
       <td><%= video.title %></td>
-       <td>
-        <%= link "Edit", to: Routes.video_path(@conn, :edit, video) %>
-        <%= link "Delete", to: Routes.video_path(@conn, :delete, video), method: :delete, data: [confirm: "Are you sure?"] %>
+      <td><%= link "Edit", to: Routes.video_path(@conn, :edit, video) %></td>
+      <td>
+        <%= link "Delete", to: Routes.video_path(@conn, :delete, video),
+                           method: :delete,
+                           data: [confirm: "Are you sure?"] %>
       </td>
       <td>
-      <%= link "Watch", to: Routes.video_path(@conn, :show, video), class: "button" %>
+        <%= link "Watch", to: Routes.watch_path(@conn, :show, video),
+                          class: "button" %>
       </td>
     </tr>
 <% end %>
