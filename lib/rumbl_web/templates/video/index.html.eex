@@ -3,24 +3,23 @@
 <table>
   <thead>
     <tr>
-      <th>Url</th>
+     
       <th>Title</th>
-      <th>Description</th>
-
+      <th></th>
+      <th></th>
       <th></th>
     </tr>
   </thead>
   <tbody>
 <%= for video <- @videos do %>
     <tr>
-      <td><%= video.url %></td>
       <td><%= video.title %></td>
-      <td><%= video.description %></td>
-
-      <td>
-        <%= link "Show", to: Routes.video_path(@conn, :show, video) %>
+       <td>
         <%= link "Edit", to: Routes.video_path(@conn, :edit, video) %>
         <%= link "Delete", to: Routes.video_path(@conn, :delete, video), method: :delete, data: [confirm: "Are you sure?"] %>
+      </td>
+      <td>
+      <%= link "Watch", to: Routes.video_path(@conn, :show, video), class: "button" %>
       </td>
     </tr>
 <% end %>
