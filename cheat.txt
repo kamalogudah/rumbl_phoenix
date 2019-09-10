@@ -1,0 +1,2 @@
+mix phx.gen.schema Multimedia.Annotation annotations body:text at:integer user_id:references:users video_id:references:videos # generating a schema
+mix ecto.migrate # running migrations
